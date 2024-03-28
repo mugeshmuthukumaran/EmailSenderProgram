@@ -1,0 +1,22 @@
+Task 1 Findings and Improvements:
+
+the Program.cs file consists of two methods will all the business logic and object creation within the same file.
+I have done a few fixes below.
+1) I have separated all Business logic, Data access logic, Mail sending logic, Program.cs to frame an n-tire Architecture. this improves code readability and develop scalable application.
+2 Change from Sunday to Monday on comeback mail as per Comments mentioned.
+3 global declarations for hard-coded strings.
+4 Catch the Specific Exceptions (SMTP exception handling)
+5) Printing the Error message on Exception occurs (Console.WriteLine(ex.Message));
+6) SMTP host to verify mail send
+7) splitting mail message object and SMTP logic to handle different mail types
+8) convert looping and its conditions to linq query/methods
+9) Changing naming conventions for all methods, objects, classes.
+10 Remove empty space and unused using statements
+
+Task 2:
+Defining Archetecture: i will be defining the Archetechure that should be scalable and provide better readablity. in this project i prefered n-tire archetecture.
+Designing better code: I will follow All design principles and design pattern to get better efficiency in code.
+Preparing Unit testcase: Preparing Autommated unit test cases to avoid bugs in Deployment.
+Secure code: developing the secure code by closing the connection string once it is used, avoiding sql injection by prefering parameterised query insted of hard coded. And Avoiding the Hardcoded username, password anywhere in code.
+Preventing the code from vulnerablities: I prefer Tools like CAST,SonarQube to show the code vilnerablities and fixing it wisely.
+
